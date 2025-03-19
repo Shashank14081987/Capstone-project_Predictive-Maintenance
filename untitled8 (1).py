@@ -65,12 +65,6 @@ describe_data(df)
 # Assuming 'df' is your DataFrame
 for column in df.columns:
   if df[column].dtype in ['int64', 'float64']:  # Check if the column is numeric
-    sns.barplot(x=df[column].value_counts().index, y=df[column].value_counts().values)
-    plt.title(f'Bar Chart for {column}')
-    plt.xlabel(column)
-    plt.ylabel('Frequency')
-    plt.xticks(rotation=45, ha='right')
-    plt.show()
 
 # Drop irrelevant columns
 df = df.drop(columns=["UDI", "Product ID"])
