@@ -65,7 +65,6 @@ describe_data(df)
 # Assuming 'df' is your DataFrame
 for column in df.columns:
   if df[column].dtype in ['int64', 'float64']:  # Check if the column is numeric
-    plt.figure(figsize=(15, 6))
     sns.barplot(x=df[column].value_counts().index, y=df[column].value_counts().values)
     plt.title(f'Bar Chart for {column}')
     plt.xlabel(column)
