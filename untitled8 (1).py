@@ -66,10 +66,6 @@ describe_data(df)
 for column in df.columns:
   if df[column].dtype in ['int64', 'float64']:  # Check if the column is numeric
 
-# Drop irrelevant columns
-df = df.drop(columns=["UDI", "Product ID"])
-df
-
 # Encode categorical variable 'Type'
 label_encoder = LabelEncoder()
 df["Type"] = label_encoder.fit_transform(df["Type"])
