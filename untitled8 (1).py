@@ -66,10 +66,6 @@ describe_data(df)
 for column in df.columns:
   if df[column].dtype in ['int64', 'float64']:  # Check if the column is numeric
 
-# Define features and target
-X = df.drop(columns=["Target"])
-y = df["Target"]
-
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 X_train
