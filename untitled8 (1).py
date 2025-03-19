@@ -9,14 +9,6 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor, BaggingRegressor, StackingRegressor, VotingRegressor
-from sklearn.svm import SVR
-from xgboost import XGBRegressor
-from lightgbm import LGBMRegressor
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.model_selection import GridSearchCV
 
 # Load dataset
 df = pd.read_csv("predictive_maintenance.csv")
