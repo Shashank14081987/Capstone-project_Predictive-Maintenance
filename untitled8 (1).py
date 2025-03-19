@@ -389,5 +389,3 @@ if st.button("Predict"):
     input_data = np.array([[air_temp, process_temp, rotational_speed, torque, tool_wear]])
     prediction = model.predict(input_data)
     st.success(f"Prediction: {'Failure' if prediction[0] == 1 else 'No Failure'}")
-
-!streamlit run untitled8.py
