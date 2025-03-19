@@ -67,7 +67,6 @@ for column in df.columns:
   if df[column].dtype in ['int64', 'float64']:  # Check if the column is numeric
 
 # Encode categorical variable 'Type'
-label_encoder = LabelEncoder()
 df["Type"] = label_encoder.fit_transform(df["Type"])
 
 # Define features and target
