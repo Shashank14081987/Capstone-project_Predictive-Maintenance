@@ -298,7 +298,6 @@ joblib.dump(best_model, "best_machine_failure_model1.pkl")
 joblib.dump(scaler, "scaler.pkl")
 
 # prompt: import this file to streamlit
-!pip install streamlit
 import streamlit as st
 import pandas as pd
 import numpy as np
