@@ -62,9 +62,6 @@ describe_data(df)
 
 # prompt: generate code to plot bar chart against each variable
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 # Assuming 'df' is your DataFrame
 for column in df.columns:
   if df[column].dtype in ['int64', 'float64']:  # Check if the column is numeric
